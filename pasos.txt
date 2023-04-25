@@ -21,3 +21,5 @@ y ver sus respuestas.
 los definimos desde consola con el comando = pip freeze > req.txt (esto se hace desde anaconda)
 --onceavo, darle permisos de ejcucion desde git bash = chmod a+x build.sh
 --doceavo, installar gunicorn
+--Proceso de acceder a git
+--Treceavo, declarar variables: DATABASE_URL, SECRET_KEY(con secret geberate)
