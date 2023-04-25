@@ -1,0 +1,8 @@
+pasos:
+-primero creamos el modelo que hace alucion a la DB
+-Segundo creamos el serializer correspondiente para cada modelo
+-Tercero creamos el archivo api para especificar los viewsets
+-cuarto definimos el router para generar las urls
+-Quinto debemos incluir el router en las urls del main del proyecto
+-Sexto, para el ejemplo, instalar thunder client para enviar solicitudes HTTP a la api
+y ver sus respuestas.
