@@ -1,14 +1,11 @@
-asgiref @ file:///C:/ci_311/asgiref_1676448296195/work
+asgiref==3.5.2
+backports.zoneinfo==0.2.1
 Brotli==1.0.9
-dj-database-url==1.3.0
-Django @ file:///C:/ci_311/django_1676469589007/work
-django-widget-tweaks==1.4.12
-djangorestframework==3.14.0
+dj-database-url==1.0.0
+Django==4.1
+djangorestframework==3.13.1
 gunicorn==20.1.0
-Pillow==9.5.0
-psycopg2-binary==2.9.6
-pytz==2023.3
-sqlparse @ file:///C:/ci_311/sqlparse_1676456541280/work
-typing_extensions==4.5.0
-tzdata @ file:///tmp/build/80754af9/python-tzdata_1611693927741/work
-whitenoise==6.4.0
+psycopg2-binary==2.9.3
+pytz==2022.2.1
+sqlparse==0.4.2
+whitenoise==6.2.0
