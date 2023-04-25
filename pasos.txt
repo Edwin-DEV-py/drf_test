@@ -6,3 +6,18 @@ pasos:
 -Quinto debemos incluir el router en las urls del main del proyecto
 -Sexto, para el ejemplo, instalar thunder client para enviar solicitudes HTTP a la api
 y ver sus respuestas.
+-Pasos para desplegar en render.com:
+--Primero, importar os en SETTINGS
+--Segundo, ocultar la llave secreta.
+--Tercero, ocultar el debug y colocarlo como un boleano.
+--Cuarto definir la url que nos proporciona render
+--Luego en render.com crear una base de datos postgrest pq no admite archivos sqlite pq los borra
+--quinto, anadir dos modulos dj-database-url y psycopg2-binary
+--sexto, importar el primer modulo en settings y luego anadirlo en DATABASES
+--Septimo, usar whitenoise para los archivos estaticos de la api = whitenoise[brotli]
+--octavo, anadir en middleware en settings = 'whitenoise.middleware.WhiteNoiseMiddleware'
+--noveno, definir los staticfiles para desarrollo
+--decimo, hacer un .sh para que se ejecute los modulos a la hora de desplegar e instalar, estos
+los definimos desde consola con el comando = pip freeze > req.txt (esto se hace desde anaconda)
+--onceavo, darle permisos de ejcucion desde git bash = chmod a+x build.sh
+--doceavo, installar gunicorn
