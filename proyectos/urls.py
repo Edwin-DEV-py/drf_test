@@ -6,7 +6,7 @@ from rest_framework import routers
 from .api import *
 
 Router =  routers.DefaultRouter()
-Router.register('api/proyectos', Proyecto_ViewSet, 'proyectos') #ruta con los tipicos crud
+Router.register('api/proyectos', CrudApi, 'proyectos') #ruta con los tipicos crud
 
 #exportamos par agenerar urls en este caso POST GET PUT DELETE
 urlpatterns = Router.urls

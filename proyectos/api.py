@@ -7,7 +7,7 @@ from .models import *
 from rest_framework import viewsets,permissions
 from .serializers import *
 
-class Proyecto_ViewSet(viewsets.ModelViewSet):
-    queryset = Proyectos.objects.all() #conjunto de datos
-    permission_classes = [permissions.AllowAny] #otorgar permisos a la aplicacion cliente
-    serializer_class = Proyecto_serializer #especificar el serializer
+class CrudApi(viewsets.ModelViewSet):
+    serializer_class = TaskSerializer
+    queryset = Task.objects.all()
+    permission_classes = [permissions.AllowAny]
