@@ -139,8 +139,5 @@ if not DEBUG:
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ORIGIN_ALLOW_ALL = True
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173',
-    'https://drf-crud-eoi7.onrender.com',
-    'http://127.0.0.1:8000',]
+
 
