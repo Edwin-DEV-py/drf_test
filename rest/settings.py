@@ -139,9 +139,7 @@ if not DEBUG:
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
-]
+CORS_ALLOWED_ORIGINS = ['*',]
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:5173',
 )
