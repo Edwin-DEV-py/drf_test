@@ -139,6 +139,8 @@ if not DEBUG:
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ORIGIN_ALLOW_ALL = True
-CORS_ORIGIN_WHITELIST = ('http://localhost:5173','https://drf-crud-eoi7.onrender.com','http://localhost')
-
+CORS_ORIGIN_WHITELIST = ['http://localhost:5173','https://drf-crud-eoi7.onrender.com','http://localhost']
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema'
+}
 
